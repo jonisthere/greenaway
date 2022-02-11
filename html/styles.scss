@@ -1,0 +1,64 @@
+@import "global";
+
+
+body{
+    background-color: $background;
+}
+
+.main-page-container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    
+}
+
+.navbar{
+    margin-top: 25px;
+    
+
+.navbar-nav{
+    a{
+        margin-left: 25px;
+        
+        .nav-link.contact{
+            padding-right: 0;
+        }
+    }
+}
+}
+
+.heading{
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    margin-top: 55px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.category{
+   // border: solid 5px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: center;
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        
+    }
+
+
+
+    &__item{
+        /*border: solid 3px;
+        color: hotpink;*/
+        
+        margin-top: 45px;
+        
+       
+    }
+   
+}
