@@ -1,0 +1,156 @@
+h1 {
+  font-size: 56px;
+  line-height: 64px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+body {
+  background-color: #F1F1F1;
+}
+
+header {
+  background-color: #F1F1F1;
+  padding: 10px 0 10px 0;
+}
+
+.main-page-container {
+  max-width: 1140px;
+  width: 100%;
+  padding: 0 40px;
+  margin: auto;
+}
+
+.container-fluid {
+  text-align: center;
+}
+
+.navbar .navbar-nav .contact {
+  padding-right: 0px;
+}
+
+.navbar .navbar-nav a {
+  margin-left: 50px;
+}
+
+.heading {
+  max-width: 700px;
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .heading h1 {
+    font-size: 48px;
+    line-height: 54px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heading h1 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+
+.category.container-fluid {
+  justify-content: center;
+}
+
+.category.container-fluid .category-item {
+  margin-top: 30px;
+}
+
+.gway-footer {
+  max-width: 1200px;
+  width: 100%;
+  margin: 100px auto 60px auto;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .gway-footer__nav {
+    padding-bottom: 80px;
+  }
+}
+
+.gway-footer__nav .nav {
+  flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .gway-footer__nav .nav {
+    justify-content: center;
+  }
+}
+
+.gway-footer__nav .indeed {
+  padding-left: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .gway-footer__nav .indeed {
+    padding-left: 16px;
+  }
+}
+
+.gway-footer__top-page {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .gway-footer__top-page {
+    padding-bottom: 80px;
+  }
+}
+
+.gway-footer__copy {
+  text-align: right;
+}
+
+.gway-footer__copy p {
+  padding: 10px 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .gway-footer__copy p {
+    font-size: 10px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gway-footer__copy {
+    padding-bottom: 40px;
+    text-align: center;
+  }
+}
+
+.contact p {
+  /*color: hotpink;*/
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.contact-content {
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+
+.about p {
+  /*color: hotpink;*/
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  margin-top: 25px;
+}
+/*# sourceMappingURL=styles.css.map */
