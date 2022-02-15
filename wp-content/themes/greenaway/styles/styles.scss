@@ -4,6 +4,10 @@ $background: #f1f1f1;
 
 @import "global";
 
+p, h1, h2, h3, h4, h5, a {
+    font-family: 'century-gothic', sans-serif !important;
+}
+
 
     .body{
         background-color: $background;

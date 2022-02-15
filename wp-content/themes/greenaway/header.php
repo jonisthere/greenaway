@@ -36,10 +36,10 @@ defined( 'ABSPATH' ) || exit;
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="">Home</a>
-                  <a class="nav-link" href="#">Work</a>
-                  <a class="nav-link" href="./about/">About</a>
-                  <a class="nav-link contact" href="./contact/">Contact</a>
+                  <a class="nav-link active" aria-current="page" href="<?php echo get_site_url(); ?>">Home</a>
+                  <a class="nav-link" href="<?php echo get_site_url() . '/work'; ?>">Work</a>
+                  <a class="nav-link" href="<?php echo get_site_url() . '/about'; ?>">About</a>
+                  <a class="nav-link contact" href="<?php echo get_site_url() . '/contact'; ?>">Contact</a>
                 </div>
               </div>
             </div>
