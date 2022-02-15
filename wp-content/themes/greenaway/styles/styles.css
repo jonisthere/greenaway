@@ -147,4 +147,64 @@ header .navbar-brand {
   margin-top: 25px;
 }
 
+<<<<<<< HEAD
 /*# sourceMappingURL=styles.css.map */
+=======
+.footer__nav nav {
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__nav nav {
+    flex-direction: row;
+  }
+}
+
+.footer__nav a .nav-link aria-current.true {
+  color: #96c93d;
+}
+
+img.alignright {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+
+img.alignleft {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignright {
+  float: right;
+}
+
+.alignleft {
+  float: left;
+}
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignleft {
+  margin-right: 20px;
+}
+
+.alignright {
+  margin-left: 20px;
+}
+/*# sourceMappingURL=styles.css.map */
+
+p, h2, h1 {
+  font-family: 'century-gothic', sans-serif !important;
+}
+>>>>>>> main
