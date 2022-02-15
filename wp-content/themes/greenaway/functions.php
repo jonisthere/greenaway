@@ -50,5 +50,8 @@ foreach ( $understrap_includes as $file ) {
 	require_once get_theme_file_path( $understrap_inc_dir . $file );
 }
 
+function greenaway_files() {
+	wp_enqueue_style('greenaway_main_styles', get_stylesheet_uri());
+}
 
-
+add_action('wp_enqueue_scripts', 'greenaway_files');

@@ -10,63 +10,43 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-$container = get_theme_mod( 'understrap_container_type' );
 ?>
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html lang="en">
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1, maximum-scale=1">
 	<?php wp_head(); ?>
-	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/icons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/icons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/icons/favicon-16x16.png">
+    <meta name="description" content="Greenaway">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href=""> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+    <title>Greenaway & Greenaway</title>
 </head>
 
-<body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>
-<?php do_action( 'wp_body_open' ); ?>
-<div class="site" id="page">
-<!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> 
-	
-leaving this for your ref copy these styles across to new menu -->
-
-  
+<body class="body">
 <div class="main-page-container">
-<a class="navbar-brand" href="<?php echo home_url(); ?>"><img class="logo logo-mobile" src="<?php echo get_template_directory_uri(); ?>/icons/logo_black_crop.png" alt="Real democracy movement logo"></a>
-<div id="mobile-menu-container">
-
-</div>
-	<!-- ******************* The Navbar Area ******************* -->
-	<nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="<?php echo home_url(); ?>"><img class="logo logo-main" src="<?php echo get_template_directory_uri(); ?>/icons/logo_black_crop.png" alt="Real democracy movement logo"></a>
-      
-	  
-      
-        
-        <?php 
-				wp_nav_menu(
-					array(
-						'theme_location'  => 'primary',
-						'container_class' => 'collapse navbar-collapse',
-						'container_id'    => 'main-menu',
-						'menu_class'      => 'navbar-nav',
-						'fallback_cb'     => '',
-						'menu_id'         => 'main-menu',
-						'depth'           => 2,
-						
-					)
-				);
-				?>
-        
-      <form class="d-flex">
-            <a href="<?php echo esc_url( get_page_link( 10365 ) ) ?>" class="btn-nav" type="link">Log In</a>
-        </form>
-
-		
-  </nav>
-  
+    <header class="sticky-top"> 
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="">Greenaway & Greenaway</a>
+              <div class="list">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="">Home</a>
+                  <a class="nav-link" href="#">Work</a>
+                  <a class="nav-link" href="./about/">About</a>
+                  <a class="nav-link contact" href="./contact/">Contact</a>
+                </div>
+              </div>
+            </div>
+            </div>
+          </nav>
+    </header>
 </div>
   
