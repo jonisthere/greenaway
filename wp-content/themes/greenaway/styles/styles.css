@@ -11740,3 +11740,7 @@ img.aligncenter {
   margin-left: 20px;
 }
 /*# sourceMappingURL=styles.css.map */
+
+p, h2, h1 {
+  font-family: 'century-gothic', sans-serif !important;
+}
