@@ -12,6 +12,7 @@
 					<div class="col-sm-12 col-md-9">
 						<div class="blog-single__content">
 							<div class="inner">
+                            <?php the_title(); ?>
 								<?php the_content(); ?>
 							</div>
 						</div>

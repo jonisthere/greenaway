@@ -18,7 +18,6 @@ defined('ABSPATH') || exit;
 
 get_header();
 
-$container = get_theme_mod('understrap_container_type');
 
 ?>
 
@@ -31,7 +30,7 @@ $container = get_theme_mod('understrap_container_type');
 				while ( have_posts() ) {
 					the_post();
 
-				}
+				
 				
 				?>
 				<?php $cat = get_field('category_select'); ?>
@@ -41,7 +40,7 @@ $container = get_theme_mod('understrap_container_type');
 				<?php // echo get_the_post_thumbnail( $post->ID, 'large' ); ?> -->
 
 				<div class="entry-content">
-				<?php the_content(); ?>
+				
 
                 <?php
 						$args = array ('post_type' => array('work'), 
@@ -85,6 +84,10 @@ $container = get_theme_mod('understrap_container_type');
 		<?php } ?>
 	<?php } ?>
 	<?php wp_reset_postdata(); ?>
+
+
+	<?php the_title(); ?>
+	<?php } ?>
 
 			</div><!-- .entry-content -->
 		</div><!-- .row -->
