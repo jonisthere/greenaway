@@ -158,13 +158,13 @@ function custom_post_example() {
 	if( function_exists('acf_add_local_field_group') ):
 
 		acf_add_local_field_group(array(
-			'key' => 'group_620b812330c1c',
-			'title' => 'Category Select',
+			'key' => 'group_620c06817dad0',
+			'title' => 'Work category display',
 			'fields' => array(
 				array(
-					'key' => 'field_620b81512c80c',
-					'label' => 'Category Select',
-					'name' => 'category_select',
+					'key' => 'field_620c06a68d49b',
+					'label' => 'work cat display',
+					'name' => 'work_cat_display',
 					'type' => 'taxonomy',
 					'instructions' => '',
 					'required' => 0,
@@ -174,7 +174,7 @@ function custom_post_example() {
 						'class' => '',
 						'id' => '',
 					),
-					'taxonomy' => 'work_types',
+					'taxonomy' => 'category',
 					'field_type' => 'select',
 					'allow_null' => 0,
 					'add_term' => 1,
@@ -190,6 +190,52 @@ function custom_post_example() {
 						'param' => 'page_template',
 						'operator' => '==',
 						'value' => 'page-cat.php',
+					),
+				),
+			),
+			'menu_order' => 0,
+			'position' => 'normal',
+			'style' => 'default',
+			'label_placement' => 'top',
+			'instruction_placement' => 'label',
+			'hide_on_screen' => '',
+			'active' => true,
+			'description' => '',
+		));
+		
+		acf_add_local_field_group(array(
+			'key' => 'group_620bd0a0d6fc9',
+			'title' => 'work page',
+			'fields' => array(
+				array(
+					'key' => 'field_620bd0aae78d8',
+					'label' => 'work pages',
+					'name' => 'work_pages',
+					'type' => 'post_object',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array(
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'post_type' => array(
+						0 => 'page',
+					),
+					'taxonomy' => '',
+					'allow_null' => 0,
+					'multiple' => 1,
+					'return_format' => 'object',
+					'ui' => 1,
+				),
+			),
+			'location' => array(
+				array(
+					array(
+						'param' => 'page_template',
+						'operator' => '==',
+						'value' => 'page-work.php',
 					),
 				),
 			),
