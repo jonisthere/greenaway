@@ -11247,7 +11247,17 @@ header .navbar-brand {
   justify-content: center;
 }
 .category.container-fluid .category-item, .category.container-sm .category-item, .category.container-md .category-item, .category.container-lg .category-item, .category.container-xl .category-item, .category.container-xxl .category-item {
+  position: relative;
   margin-top: 30px;
+}
+.category.container-fluid .category-item .category-text, .category.container-sm .category-item .category-text, .category.container-md .category-item .category-text, .category.container-lg .category-item .category-text, .category.container-xl .category-item .category-text, .category.container-xxl .category-item .category-text {
+  position: absolute;
+  top: 47%;
+  left: 46%;
+}
+.category.container-fluid .category-item .category-text a, .category.container-sm .category-item .category-text a, .category.container-md .category-item .category-text a, .category.container-lg .category-item .category-text a, .category.container-xl .category-item .category-text a, .category.container-xxl .category-item .category-text a {
+  color: #f1f1f1;
+  text-decoration: none;
 }
 
 .contact p {

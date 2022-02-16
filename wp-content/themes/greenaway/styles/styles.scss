@@ -177,17 +177,28 @@ p, h1, h2, h3, h4, h5, a {
 
 
 .category.container-fluid{   
-              //  border: solid 3px hotpink; 
+    //    border: solid 3px hotpink; 
              justify-content: center;
 
-             .row{
-          //      border: solid 3px rgb(15, 15, 15); 
-             }
-
              .category-item {
+                 position: relative;
+                 //display: flex;
        //          border: solid 3px hotpink; 
                  margin-top: 30px;
-                 }
+                 
+
+                 .category-text{
+                    position: absolute;
+                    top: 47%;
+                    left: 46%;
+                  
+                    a{  
+                        color: $background;
+                        text-decoration: none;
+                       
+                    }
+                }
+                }
          
         
     }

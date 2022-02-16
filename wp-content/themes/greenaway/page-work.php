@@ -24,56 +24,51 @@ get_header();
 
 <div class="main-page-container" id="">
 		
+		<?php
+			while (have_posts()) : the_post(); ?>
 
-			<div class="container-fluid">
-				<div class="content heading">
-					<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, repellat?</h1>
-				</div>
-			</div>
-							
+	<div class="container-fluid">
+		<div class="content heading">
+				<h1><?php the_title(); ?></h1>
+				<p><?php the_content(); ?></p>
+		</div>
+	</div>
 
-				<?php
-                 while (have_posts()) : the_post(); ?>
+	<div class="category container-fluid"> 
+		<div class="row">
 
-                    <?php
-                    the_title();
-                    the_content(); ?>
-                    <?php
-					$work_pages = get_field('work_pages');
-                    // This loops round all the work items selected on ACF within the page
-					if( $work_pages ): ?>
-						<?php foreach( $work_pages as $work_page ): 
-							$permalink = get_permalink( $work_page->ID );
-							$title = get_the_title( $work_page->ID );
-							
-							?>
+			<?php
+
+			$work_pages = get_field('work_pages');
+			// This loops round all the work items selected on ACF within the page
+			if( $work_pages ): ?>
+				<?php foreach( $work_pages as $work_page ): 
+					$permalink = get_permalink( $work_page->ID );
+					$title = get_the_title( $work_page->ID );
 					
-					<div class="category container-fluid"> 
-							<div class="row">
-								<div class="category-item col-12 col-md-6">
-							
-									<?php if (has_post_thumbnail( $work_page->ID )) { ?>
-                                        <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $work_page->ID ), 'grid-image' ); ?>
-                                        <?php $altText = get_post_meta( get_post_thumbnail_id( $work_page->ID ), '_wp_attachment_image_alt', true ); ?>
-							
-
-                                            <img src="<?php echo $image[0]; ?>" class="img-fluid" alt="<?php echo $altText; ?>">
-									
-                                        
-									<?php } ?>
-									<div class="articles__content">
-										<p class="bold"><a href="<?php echo get_permalink($work_page->ID); ?>"><?php echo get_the_title($work_page->ID); ?></a></p>
-									</div>
-								</div>
-							</div>
-					</div>
-						<?php endforeach; ?>
+					?>
+			
+			
+				<div class="category-item col-12 col-md-6">
+			
+					<?php if (has_post_thumbnail( $work_page->ID )) { ?>
+						<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $work_page->ID ), 'grid-image' ); ?>
+						<?php $altText = get_post_meta( get_post_thumbnail_id( $work_page->ID ), '_wp_attachment_image_alt', true ); ?>
+			
+							<img src="<?php echo $image[0]; ?>" class="img-fluid" alt="<?php echo $altText; ?>">
 						
-					<?php endif; ?>
-
-            <?php endwhile; ?>
+					<?php } ?>
+					<div class="category-text">
+						<p class="bold"><a href="<?php echo get_permalink($work_page->ID); ?>"><?php echo get_the_title($work_page->ID); ?></a></p>
+					</div>
+				</div>
+					
+				<?php endforeach; ?>
 				
-
+			<?php endif; ?>
+		</div>
+	</div>
+	<?php endwhile; ?>
 </div> 
 		
 	
