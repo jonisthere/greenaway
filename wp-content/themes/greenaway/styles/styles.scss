@@ -101,7 +101,7 @@ p, h1, h2, h3, h4, h5, a {
     }
    
     &__copy{   
-    // border: solid 3px hotpink; 
+   //  border: solid 3px hotpink; 
     
      text-align: right;
         p{
@@ -177,28 +177,34 @@ p, h1, h2, h3, h4, h5, a {
 
 
 .category.container-fluid{   
-    //    border: solid 3px hotpink; 
-             justify-content: center;
+   //     border: solid 3px hotpink; 
+            margin-top: 50px; 
+            justify-content: center;
 
              .category-item {
                  position: relative;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                  
                  //display: flex;
        //          border: solid 3px hotpink; 
                  margin-top: 30px;
+
+                 img{
+                     width: 100%;
+                 }
                  
 
                  .category-text{
+                    
                     position: absolute;
-                    top: 47%;
-                    left: 46%;
-                  
-                    a{  
+                       a{  
                         color: $background;
                         text-decoration: none;
-                       
-                    }
-                }
-                }
+                        }
+                                }
+                            }
          
         
     }
