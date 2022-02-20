@@ -25,8 +25,13 @@ get_header();
 		the_post();
 	?>
 		<?php $cat = get_field('work_cat_display'); ?>
-		<?php echo $cat; ?>
-		<?php the_title(); ?>
+		<div class="container-fluid">
+		<div class="content heading">
+				<h1><?php the_title(); ?></h1>
+				<p><?php the_content(); ?></p>
+		</div>
+	</div>
+		
 		<?php
 			$args = array ('post_type' => array('work'), 
 				'posts_per_page' => -1,
@@ -49,14 +54,18 @@ get_header();
 					<?php while ( $the_query->have_posts() ) {
 						$the_query->the_post(); ?>
 						<div class="category-item col-12 col-md-6">
-							<?php the_title(); ?>
+							
 							<?php	
 								if (has_post_thumbnail( $post->ID ) ) :
 									$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'main-image' );?>
 									<?php if($image) { ?>
 										<a href="<?php echo get_permalink(); ?>"><img src="<?php echo $image[0]; ?>" class="img-fluid" alt=""></a>   
 									<?php } ?>
+									<div class="category-text">
+						<p class="bold"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></p>
+					</div>
 							<?php endif; ?> 
+							
 							<!-- <div class="inner"
 									style="background-image:url('<?php //echo $image[0]; ?>')" >
 									
