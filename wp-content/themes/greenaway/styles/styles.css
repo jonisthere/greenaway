@@ -11260,22 +11260,59 @@ header .navbar-brand {
 .category.container-fluid .category-item .category-text, .category.container-sm .category-item .category-text, .category.container-md .category-item .category-text, .category.container-lg .category-item .category-text, .category.container-xl .category-item .category-text, .category.container-xxl .category-item .category-text {
   position: absolute;
 }
-.category.container-fluid .category-item .category-text a, .category.container-sm .category-item .category-text a, .category.container-md .category-item .category-text a, .category.container-lg .category-item .category-text a, .category.container-xl .category-item .category-text a, .category.container-xxl .category-item .category-text a {
+.category.container-fluid .category-item .category-text p, .category.container-sm .category-item .category-text p, .category.container-md .category-item .category-text p, .category.container-lg .category-item .category-text p, .category.container-xl .category-item .category-text p, .category.container-xxl .category-item .category-text p {
+  margin: 0;
+}
+.category.container-fluid .category-item .category-text p a, .category.container-sm .category-item .category-text p a, .category.container-md .category-item .category-text p a, .category.container-lg .category-item .category-text p a, .category.container-xl .category-item .category-text p a, .category.container-xxl .category-item .category-text p a {
   color: #f1f1f1;
   text-decoration: none;
 }
 
-.contact p {
-  /*color: hotpink;*/
-  max-width: 600px;
+.blog-single__section .col-12 {
+  max-width: 1200px;
   width: 100%;
-  margin: auto;
-  margin-top: 25px;
+}
+.blog-single__content .heading.inner h1, .blog-single__content .heading.inner .h1 {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.blog-single__content .heading.inner p {
+  font-size: 14px;
+  line-height: 16px;
+}
+.blog-single__content a .img-fluid {
+  max-width: 1200px;
+  width: 100%;
 }
 
-.contact-content {
-  padding-top: 90px;
-  padding-bottom: 50px;
+.contact-form #caldera_form_1.caldera-grid {
+  max-width: 400px;
+  width: 100%;
+}
+.contact-form .caldera-grid .form-group {
+  margin-bottom: 25px;
+}
+.contact-form .caldera-grid .form-control {
+  background-color: #f1f1f1;
+  border: none;
+  border-bottom: solid 1px black;
+  box-shadow: none;
+}
+.contact-form .caldera-grid .form-control::placeholder {
+  font-family: "century-gothic", sans-serif !important;
+  color: black;
+  opacity: 1;
+}
+.contact-form .form-group {
+  text-align: right;
+}
+.contact-form .caldera-grid .btn-default {
+  border: none;
+  padding-right: 0;
+  background-color: #f1f1f1;
+}
+.contact-form .caldera-grid .btn {
+  font-size: 16px;
 }
 
 .about p {

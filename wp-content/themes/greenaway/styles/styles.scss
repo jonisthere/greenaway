@@ -92,7 +92,7 @@ p, h1, h2, h3, h4, h5, a {
     }
 
     &__top-page{
-         //    border: solid 3px hotpink; 
+       //      border: solid 3px hotpink; 
         @media screen and (max-width: 768px){
             padding-bottom: 80px;
             }
@@ -101,7 +101,7 @@ p, h1, h2, h3, h4, h5, a {
     }
    
     &__copy{   
-   //  border: solid 3px hotpink; 
+    // border: solid 3px hotpink; 
     
      text-align: right;
         p{
@@ -177,7 +177,7 @@ p, h1, h2, h3, h4, h5, a {
 
 
 .category.container-fluid{   
-   //     border: solid 3px hotpink; 
+     //   border: solid 3px hotpink; 
             margin-top: 50px; 
             justify-content: center;
 
@@ -188,46 +188,114 @@ p, h1, h2, h3, h4, h5, a {
                  align-items: center;
                   
                  //display: flex;
-       //          border: solid 3px hotpink; 
+             //    border: solid 3px hotpink; 
                  margin-top: 30px;
+                
 
                  img{
                      width: 100%;
+                     
                  }
-                 
-
+                
                  .category-text{
-                    
                     position: absolute;
+                    p{
+                        margin: 0;
                        a{  
                         color: $background;
                         text-decoration: none;
                         }
-                                }
+                    }
+                    }
                             }
+
+                            
          
         
     }
 
+//------- SINGLE POST STYLING -------//
+
+.blog-single{
+
+
+
+    &__section{
+        .col-12{
+        max-width: 1200px;
+        width: 100%;
+        }
+    }
+
+    &__content{
+        
+        .heading.inner{
+            h1{
+                padding-top: 10px;
+                padding-bottom: 5px;
+            }
+            p{
+            //   color: hotpink;
+               font-size: 14px;   
+               line-height: 16px;   
+            //   padding-bottom: 5px;      
+            }
+        }
+        a{
+        .img-fluid{
+    max-width: 1200px;
+    width: 100%;
+        }
+    }
+    }
+
+}
+
+
+
+
 
 //------ CONTACT PAGE STYLING -----//
 
-.contact{
-    
-    
-    p{
-        /*color: hotpink;*/
-        max-width: 600px;
-        width: 100%;
-        margin: auto;
-        margin-top: 25px;
-        
-    }
+
+.contact-form{
+
+#caldera_form_1.caldera-grid{
+    max-width: 400px;
+    width: 100%;
 }
 
-.contact-content{
-    padding-top: 90px;
-    padding-bottom: 50px;
+.caldera-grid .form-group{
+    margin-bottom: 25px;
+}
+
+.caldera-grid .form-control{
+    background-color: $background;
+    border: none;
+    border-bottom: solid 1px black;
+    box-shadow: none;
+}
+
+.caldera-grid .form-control::placeholder {
+    font-family: 'century-gothic', sans-serif !important;
+    color: rgb(0, 0, 0);
+    opacity: 1;
+  }
+
+  .form-group{
+      text-align: right;
+  }
+
+  .caldera-grid .btn-default{
+      border: none;
+      padding-right: 0;
+      background-color: $background;
+  }
+
+  .caldera-grid .btn{
+      font-size: 16px;
+  }
+
 }
 
 
