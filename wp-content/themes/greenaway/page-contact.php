@@ -36,7 +36,7 @@ get_header();
 						<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $work_page->ID ), 'grid-image' ); ?>
 						<?php $altText = get_post_meta( get_post_thumbnail_id( $work_page->ID ), '_wp_attachment_image_alt', true ); ?>
 			
-							<img src="<?php echo $image[0]; ?>" class="img-fluid" alt="<?php echo $altText; ?>">
+							<img src="<?php echo $image[0]; ?>" class="" alt="<?php echo $altText; ?>">
 						
 					<?php } ?>
 				</div>

@@ -48,7 +48,8 @@ p, h1, h2, h3, h4, h5, a {
     .contact{
         padding-right: 0px;
     }
-    a{
+    a{  text-decoration: none;
+        color: black;
         margin-left: 50px;        
     }
 }
@@ -72,7 +73,7 @@ p, h1, h2, h3, h4, h5, a {
             padding-bottom: 80px;
             }
 
-    //    border: solid 3px hotpink; 
+        border: solid 3px hotpink; 
         
         .nav{
             flex-wrap: nowrap;
@@ -101,7 +102,7 @@ p, h1, h2, h3, h4, h5, a {
     }
    
     &__copy{   
-    // border: solid 3px hotpink; 
+     border: solid 3px hotpink; 
     
      text-align: right;
         p{
@@ -230,6 +231,8 @@ p, h1, h2, h3, h4, h5, a {
     &__content{
         
         .heading.inner{
+            max-width: 1200px;
+            width: 100%;
             h1{
                 padding-top: 10px;
                 padding-bottom: 5px;
@@ -237,7 +240,7 @@ p, h1, h2, h3, h4, h5, a {
             p{
             //   color: hotpink;
                font-size: 14px;   
-               line-height: 16px;   
+               line-height: 18px;   
             //   padding-bottom: 5px;      
             }
         }
@@ -259,10 +262,18 @@ p, h1, h2, h3, h4, h5, a {
 
 
 .contact-form{
+//    border: solid 1px hotpink; 
+   
 
 #caldera_form_1.caldera-grid{
-    max-width: 400px;
+   max-width: 400px;
     width: 100%;
+
+    @media screen and (max-width: 992px){
+    max-width: 500px;
+    width: 100%;
+    }
+
 }
 
 .caldera-grid .form-group{

@@ -31,17 +31,23 @@ defined( 'ABSPATH' ) || exit;
             <div class="container-fluid">
               <a class="navbar-brand" href="">Greenaway & Greenaway</a>
               <div class="list">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="<?php echo get_site_url(); ?>">Home</a>
-                  <a class="nav-link" href="<?php echo get_site_url() . '/work'; ?>">Work</a>
-                  <a class="nav-link" href="<?php echo get_site_url() . '/about'; ?>">About</a>
-                  <a class="nav-link contact" href="<?php echo get_site_url() . '/contact'; ?>">Contact</a>
-                </div>
-              </div>
+            
+             
+                <?php wp_nav_menu(
+      array(
+            'theme_location'  => 'primary',
+            'container_class' => 'collapse navbar-collapse',
+            'container_id'    => 'main-menu',
+						'menu_class'      => 'navbar-nav',
+						'fallback_cb'     => '',
+						'menu_id'         => 'main-menu',
+						'depth'           => 2,
+      )
+      );  ?>
+               
             </div>
             </div>
           </nav>
