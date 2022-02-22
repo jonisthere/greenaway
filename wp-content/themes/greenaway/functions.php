@@ -36,6 +36,7 @@ add_image_size( 'grid-image', 540, 490, true );
 add_image_size( 'portrait-image', 200, 260, true );
 add_image_size( 'main-image', 600, 400, true );
 add_image_size( 'post-image', 1200, 680, true );
+add_image_size( 'work-item-image', 1200 );
 
 // Load WooCommerce functions if WooCommerce is activated.
 if ( class_exists( 'WooCommerce' ) ) {
@@ -191,6 +192,94 @@ function custom_post_example() {
 						'param' => 'page_template',
 						'operator' => '==',
 						'value' => 'page-cat.php',
+					),
+				),
+			),
+			'menu_order' => 0,
+			'position' => 'normal',
+			'style' => 'default',
+			'label_placement' => 'top',
+			'instruction_placement' => 'label',
+			'hide_on_screen' => '',
+			'active' => true,
+			'description' => '',
+		));
+		
+		acf_add_local_field_group(array(
+			'key' => 'group_6213af6609cd5',
+			'title' => 'Work Items',
+			'fields' => array(
+				array(
+					'key' => 'field_6213af75b60fd',
+					'label' => 'Images',
+					'name' => 'images',
+					'type' => 'repeater',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array(
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'collapsed' => '',
+					'min' => 0,
+					'max' => 0,
+					'layout' => 'table',
+					'button_label' => '',
+					'sub_fields' => array(
+						array(
+							'key' => 'field_6213af9db60fe',
+							'label' => 'Image',
+							'name' => 'image',
+							'type' => 'image',
+							'instructions' => '',
+							'required' => 0,
+							'conditional_logic' => 0,
+							'wrapper' => array(
+								'width' => '',
+								'class' => '',
+								'id' => '',
+							),
+							'return_format' => 'id',
+							'preview_size' => 'grid-image',
+							'library' => 'all',
+							'min_width' => '',
+							'min_height' => '',
+							'min_size' => '',
+							'max_width' => '',
+							'max_height' => '',
+							'max_size' => '',
+							'mime_types' => '',
+						),
+					),
+				),
+				array(
+					'key' => 'field_6213afdcd3db9',
+					'label' => 'Video',
+					'name' => 'video',
+					'type' => 'text',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array(
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'default_value' => '',
+					'placeholder' => '',
+					'prepend' => '',
+					'append' => '',
+					'maxlength' => '',
+				),
+			),
+			'location' => array(
+				array(
+					array(
+						'param' => 'post_type',
+						'operator' => '==',
+						'value' => 'work',
 					),
 				),
 			),

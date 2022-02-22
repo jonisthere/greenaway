@@ -15,17 +15,25 @@
                             	<h1><?php the_title(); ?></h1>
 								<p><?php the_content(); ?></p>
 							</div>
-								<?php	
-								if (has_post_thumbnail( $post->ID ) ) :
-									$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ),  'post-image' );?>
-									<?php if($image) { ?>
-										<a href="<?php echo get_permalink(); ?>"><img src="<?php echo $image[0]; ?>" class="img-fluid" alt=""></a>   
-									<?php } ?>
 								
-							<?php endif; ?> 
 							</div>
 					</div>
-					
+					<?php if( have_rows('images') ): ?>
+						<ul class="slides">
+						<?php while( have_rows('images') ): the_row(); 
+							$image = get_sub_field('image');
+							?>
+							<div>
+								<?php $imageUrl = wp_get_attachment_image_src( $image, 'work-item-image' ); ?>
+								<img src="<?php echo $imageUrl[0]; ?>" alt="">
+								<p><?php // the_sub_field('caption'); ?></p>
+
+
+								
+					</div>
+						<?php endwhile; ?>
+						</ul>
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>
