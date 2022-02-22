@@ -32,7 +32,7 @@ $understrap_includes = array(
 
 // add_image_size( 'main-image', 724, 474, true );
 // add_image_size( 'featured-image', 600, 457, true );
-add_image_size( 'grid-image', 540, 490, true );
+add_image_size( 'grid-image', 540, 270, true );
 add_image_size( 'portrait-image', 200, 260, true );
 add_image_size( 'main-image', 600, 400, true );
 add_image_size( 'post-image', 1200, 680, true );

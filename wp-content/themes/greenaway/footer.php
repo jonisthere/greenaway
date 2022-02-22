@@ -21,18 +21,16 @@ defined( 'ABSPATH' ) || exit;
             <div class="row">
             <div class="col-md-4 gway-footer__nav">
                 <nav class="nav">
-                    <a class="nav-link indeed" href="#"><img class="social" src="https://via.placeholder.com/16" alt="indeed-social"></a>
-                    <a class="nav-link" href="#"><img class="social" src="https://via.placeholder.com/16" alt="indeed-social"></a>
-                    <a class="nav-link" href="#"><img class="social" src="https://via.placeholder.com/16" alt="indeed-social"></a>
-                    <a class="nav-link" href="#"><img class="social" src="https://via.placeholder.com/16" alt="indeed-social"></a>
-                    <a class="nav-link" href="#"><img class="social" src="https://via.placeholder.com/16" alt="indeed-social"></a>
+                    <a class="nav-link indeed" href="#"><img class="social" src="<?php echo get_template_directory_uri(); ?>/images/iconmonstr-facebook-1-16.png" alt="facebook-social"></a>
+                    <a class="nav-link" href="#"><img class="social" src="<?php echo get_template_directory_uri(); ?>/images/iconmonstr-instagram-11-16.png" alt="instagram-social"></a>
+                    <a class="nav-link" href="#"><img class="social" src="<?php echo get_template_directory_uri(); ?>/images/iconmonstr-vimeo-1-16.png" alt="vimeo-social"></a>
                 </nav>
             </div>
             <div class="col-md-4 gway-footer__top-page">
-                <img class="gway-footer__top-page-button" src="https://via.placeholder.com/45" alt="top-page-button">
+                <img class="gway-footer__top-page-button" src="<?php echo get_template_directory_uri(); ?>/images/iconmonstr-arrow-up-circle-thin-48.png" alt="top-page-button">
             </div>
             <div class="col-md-4 gway-footer__copy">
-                <p>&copy; Greenaway & Greenaway, all rights reserved 2022</p>
+                <p>&copy; GREENAWAY & GREENAWAY, ALL RIGHTS RESERVED 2022</p>
             </div>
         </div>
         </div>

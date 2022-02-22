@@ -27,9 +27,9 @@ defined( 'ABSPATH' ) || exit;
 <body class="body">
 <div class="main-page-container">
     <header class="sticky-top"> 
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="">Greenaway & Greenaway</a>
+              <a class="navbar-brand" href="">GREENAWAY & GREENAWAY</a>
               <div class="list">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

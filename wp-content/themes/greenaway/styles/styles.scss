@@ -1,11 +1,12 @@
-$background: #f1f1f1;
+$background: #1e1e1e;
 
 
 
 @import "global";
 
 p, h1, h2, h3, h4, h5, a {
-    font-family: 'century-gothic', sans-serif !important;
+    font-family: 'montserrat', sans-serif !important;
+    color: white;
 }
 
 
@@ -26,7 +27,10 @@ p, h1, h2, h3, h4, h5, a {
     }
 
  .container-fluid{
-     text-align: center;
+     text-align: left;
+     font-weight: 300;
+     font-size: 20px;
+     line-height: 24px;
  }
 
 
@@ -36,7 +40,8 @@ p, h1, h2, h3, h4, h5, a {
     background-color: $background;
     padding: 10px 0 10px 0;
     .navbar-brand{
-            font-size: 16px;
+            font-size: 15px;
+            font-weight: 700;
              
     }
     
@@ -49,7 +54,9 @@ p, h1, h2, h3, h4, h5, a {
         padding-right: 0px;
     }
     a{  text-decoration: none;
-        color: black;
+        
+        font-size: 15px;
+        font-weight: 700;
         margin-left: 50px;        
     }
 }
@@ -73,7 +80,7 @@ p, h1, h2, h3, h4, h5, a {
             padding-bottom: 80px;
             }
 
-        border: solid 3px hotpink; 
+    //    border: solid 3px hotpink; 
         
         .nav{
             flex-wrap: nowrap;
@@ -86,7 +93,7 @@ p, h1, h2, h3, h4, h5, a {
        .indeed{
            padding-left: 0px;
            @media screen and (max-width: 768px){
-            padding-left: 16px;
+            padding-left: 11.2px;
             }
         } 
         
@@ -102,7 +109,7 @@ p, h1, h2, h3, h4, h5, a {
     }
    
     &__copy{   
-     border: solid 3px hotpink; 
+  //  border: solid 3px hotpink; 
     
      text-align: right;
         p{
@@ -151,12 +158,12 @@ p, h1, h2, h3, h4, h5, a {
 
 .heading{
     
-    max-width: 700px;
+    max-width: 1200px;
     width: 100%;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 60px;
-    text-align: center;
+    text-align: left;
 
     @media screen and (max-width: 992px){
             h1{font-size: 48px;
@@ -183,6 +190,7 @@ p, h1, h2, h3, h4, h5, a {
             justify-content: center;
 
              .category-item {
+                 padding: 1px;
                  position: relative;
                  display: flex;
                  justify-content: center;
@@ -190,10 +198,11 @@ p, h1, h2, h3, h4, h5, a {
                   
                  //display: flex;
              //    border: solid 3px hotpink; 
-                 margin-top: 30px;
+                
                 
 
                  img{
+                     
                      width: 100%;
                      
                  }
@@ -203,7 +212,8 @@ p, h1, h2, h3, h4, h5, a {
                     p{
                         margin: 0;
                        a{  
-                        color: $background;
+                        font-weight: bold;
+                        color: white;
                         text-decoration: none;
                         }
                     }
@@ -226,6 +236,15 @@ p, h1, h2, h3, h4, h5, a {
         max-width: 1200px;
         width: 100%;
         }
+
+        .slides{
+            img{
+            max-width: 1200px;
+            width: 100%;
+            padding: 1px;
+            }
+        }
+
     }
 
     &__content{
@@ -237,17 +256,12 @@ p, h1, h2, h3, h4, h5, a {
                 padding-top: 10px;
                 padding-bottom: 5px;
             }
-            p{
-            //   color: hotpink;
-               font-size: 14px;   
-               line-height: 18px;   
-            //   padding-bottom: 5px;      
-            }
+           
         }
         a{
         .img-fluid{
-    max-width: 1200px;
-    width: 100%;
+        max-width: 1200px;
+        width: 100%;
         }
     }
     }
@@ -261,9 +275,11 @@ p, h1, h2, h3, h4, h5, a {
 //------ CONTACT PAGE STYLING -----//
 
 
-.contact-form{
-//    border: solid 1px hotpink; 
-   
+.category-item.contact-form{
+ //   border: solid 1px hotpink; 
+
+
+
 
 #caldera_form_1.caldera-grid{
    max-width: 400px;
@@ -283,13 +299,13 @@ p, h1, h2, h3, h4, h5, a {
 .caldera-grid .form-control{
     background-color: $background;
     border: none;
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px white;
     box-shadow: none;
 }
 
 .caldera-grid .form-control::placeholder {
     font-family: 'century-gothic', sans-serif !important;
-    color: rgb(0, 0, 0);
+    color: white;
     opacity: 1;
   }
 
@@ -300,6 +316,7 @@ p, h1, h2, h3, h4, h5, a {
   .caldera-grid .btn-default{
       border: none;
       padding-right: 0;
+      color: white;
       background-color: $background;
   }
 
@@ -319,7 +336,8 @@ p, h1, h2, h3, h4, h5, a {
     
     p{
         /*color: hotpink;*/
-        max-width: 600px;
+        max-width: 1200px;
+    
         width: 100%;
         margin: auto;
         margin-top: 25px;
