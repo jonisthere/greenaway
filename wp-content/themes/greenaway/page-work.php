@@ -27,14 +27,14 @@ get_header();
 		<?php
 			while (have_posts()) : the_post(); ?>
 
-	<div class="container-fluid">
+	<div class="">
 		<div class="content heading">
 				<h1><?php the_title(); ?></h1>
 				<p><?php the_content(); ?></p>
 		</div>
 	</div>
 
-	<div class="category container-fluid"> 
+	<div class="category"> 
 		<div class="row">
 
 			<?php

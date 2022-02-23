@@ -6,22 +6,28 @@
 
 	<?php while (have_posts()) : the_post(); ?>
 		<div class="full-page-container">
-			<div class="container-fluid">
-				<section class="blog-single">
-				<div class="row blog-single__section">
+			
+			<section class="project-single">
+				<div class="row project-single__section">
 					<div class="col-12 col-md-6">
-						<div class="blog-single__content">
+						<div class="project-single__content">
 							<div class="heading inner">
                             	<h1><?php the_title(); ?></h1>	
 							</div>
-							</div>
+			</div>
 					</div>
-							<div class="heading inner">
+					<div class="single-content">
+                <div class="single-content__video">
+				<iframe class="single-video" src="https://player.vimeo.com/video/388471185?autoplay=1&amp;loop=1" allowfullscreen="allowfullscreen" data-dashlane-frameid="594852970497" frameborder="0"></iframe>
+                </div>
+            </div>
+
+							<div class="content inner">
 								<p><?php the_content(); ?></p>
 							</div>
 				
 					<?php if( have_rows('images') ): ?>
-						<ul class="slides">
+						<div class="single-image">
 						<?php while( have_rows('images') ): the_row(); 
 							$image = get_sub_field('image');
 							?>
@@ -34,10 +40,11 @@
 								
 					</div>
 						<?php endwhile; ?>
-						</ul>
+					</div>
 					<?php endif; ?>
 				</div>
-			</div>
+				</section>
+			
 		</div>
 	<?php endwhile; ?>
             </div>

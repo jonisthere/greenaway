@@ -18,7 +18,7 @@ get_header();
 
 <div class="main-page-container">
 
-          <div class="container-fluid">
+          
 			<div class="about heading">
 			<h1><?php the_title(); ?></h1>
 			<p><?php the_content(); ?></p>
@@ -35,7 +35,7 @@ get_header();
 					
                 </div>
             </div>
-          </div>
+          
 </div> 
 
 <?php

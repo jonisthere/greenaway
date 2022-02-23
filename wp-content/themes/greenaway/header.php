@@ -26,31 +26,30 @@ defined( 'ABSPATH' ) || exit;
 
 <body class="body">
 <div class="main-page-container">
-    <header class="sticky-top"> 
-        <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="">GREENAWAY & GREENAWAY</a>
-              <div class="list">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            
-             
-                <?php wp_nav_menu(
-      array(
-            'theme_location'  => 'primary',
-            'container_class' => 'collapse navbar-collapse',
-            'container_id'    => 'main-menu',
-						'menu_class'      => 'navbar-nav',
-						'fallback_cb'     => '',
-						'menu_id'         => 'main-menu',
-						'depth'           => 2,
-      )
-      );  ?>
-               
-            </div>
-            </div>
-          </nav>
+    <header class=""> 
+    <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">GREENAWAY & GREENAWAY</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="<?php echo site_url();?>/home">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?php echo site_url();?>/work">WORK</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?php echo site_url();?>/about">ABOUT</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="<?php echo site_url();?>/contact">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  
+</nav>
     </header>
 </div>
   

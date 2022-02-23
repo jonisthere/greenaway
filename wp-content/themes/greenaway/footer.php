@@ -15,9 +15,9 @@ defined( 'ABSPATH' ) || exit;
 
 
 <div class="main-page-container">    
-    <footer class="container-fluid">
+    <footer>
     
-        <div class="container-fluid gway-footer">
+        <div class="gway-footer">
             <div class="row">
             <div class="col-md-4 gway-footer__nav">
                 <nav class="nav">
@@ -26,9 +26,7 @@ defined( 'ABSPATH' ) || exit;
                     <a class="nav-link" href="#"><img class="social" src="<?php echo get_template_directory_uri(); ?>/images/iconmonstr-vimeo-1-16.png" alt="vimeo-social"></a>
                 </nav>
             </div>
-            <div class="col-md-4 gway-footer__top-page">
-                <img class="gway-footer__top-page-button" src="<?php echo get_template_directory_uri(); ?>/images/iconmonstr-arrow-up-circle-thin-48.png" alt="top-page-button">
-            </div>
+          
             <div class="col-md-4 gway-footer__copy">
                 <p>&copy; GREENAWAY & GREENAWAY, ALL RIGHTS RESERVED 2022</p>
             </div>
@@ -39,6 +37,7 @@ defined( 'ABSPATH' ) || exit;
 </div>
 
 <?php wp_footer(); ?>
+
 
 </body>
 </html>
