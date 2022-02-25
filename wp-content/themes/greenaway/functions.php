@@ -60,7 +60,7 @@ function greenaway_files() {
 }
 
 function enqueue_my_custom_script() {
-    wp_enqueue_script( 'greenaway-js', '/js/theme.js', false );
+    wp_enqueue_script( 'greenaway-js', '/js/theme.min.js', false );
 }
 
 add_action( 'wp_enqueue_scripts', 'enqueue_my_custom_script' );

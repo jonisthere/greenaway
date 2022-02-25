@@ -17,7 +17,7 @@ defined( 'ABSPATH' ) || exit;
 <div class="main-page-container">    
     <footer>
     
-        <div class="gway-footer">
+        <div class=" gway-footer">
             <div class="row">
             <div class="col-md-4 gway-footer__nav">
                 <nav class="nav">
@@ -37,8 +37,6 @@ defined( 'ABSPATH' ) || exit;
 </div>
 
 <?php wp_footer(); ?>
-
-
 </body>
 </html>
 
