@@ -25,15 +25,17 @@ defined( 'ABSPATH' ) || exit;
 </head>
 
 <body class="body">
+
 <div class="main-page-container">
-    <header class=""> 
-    <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="#">GREENAWAY & GREENAWAY</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+<nav class="navbar navbar-expand-lg navbar-light">
+<a class="navbar-brand" href="#">Greenaway</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+  <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="<?php echo site_url();?>/home">HOME</a>
         </li>
@@ -47,9 +49,6 @@ defined( 'ABSPATH' ) || exit;
         <a class="nav-link" href="<?php echo site_url();?>/contact">CONTACT</a>
         </li>
       </ul>
-    </div>
-  
+  </div>
 </nav>
-    </header>
 </div>
-  

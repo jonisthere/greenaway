@@ -55,15 +55,10 @@ foreach ( $understrap_includes as $file ) {
 
 
 
-function greenaway_files() {
-	wp_enqueue_style('greenaway_main_styles', get_stylesheet_uri());
-}
+// function greenaway_files() {
+// 	wp_enqueue_style('greenaway_main_styles', get_stylesheet_uri());
+// }
 
-function enqueue_my_custom_script() {
-    wp_enqueue_script( 'greenaway-js', '/js/theme.min.js', false );
-}
-
-add_action( 'wp_enqueue_scripts', 'enqueue_my_custom_script' );
 
 // Flush your rewrite rules
 function bones_flush_rewrite_rules() {
