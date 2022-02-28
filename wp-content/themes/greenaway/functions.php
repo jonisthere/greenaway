@@ -37,6 +37,7 @@ add_image_size( 'portrait-image', 200, 260, true );
 add_image_size( 'main-image', 600, 400, true );
 add_image_size( 'post-image', 1200, 680, true );
 add_image_size( 'work-item-image', 1200 );
+add_image_size( 'contact-image', 540, 490, true );
 
 // Load WooCommerce functions if WooCommerce is activated.
 if ( class_exists( 'WooCommerce' ) ) {
@@ -343,3 +344,4 @@ function custom_post_example() {
 		
 		endif;
 
+		

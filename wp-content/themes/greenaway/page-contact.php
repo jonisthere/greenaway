@@ -35,7 +35,7 @@ get_header();
 				<div class="category-item col-12 col-md-6">
 			
 					<?php if (has_post_thumbnail( $work_page->ID )) { ?>
-						<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $work_page->ID ), 'grid-image' ); ?>
+						<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $work_page->ID ), 'contact-image' ); ?>
 						<?php $altText = get_post_meta( get_post_thumbnail_id( $work_page->ID ), '_wp_attachment_image_alt', true ); ?>
 			
 							<img src="<?php echo $image[0]; ?>" class="" alt="<?php echo $altText; ?>">
@@ -44,7 +44,7 @@ get_header();
 				</div>
 				<div class="contact-form col-12 col-md-6">
 				
-				<?php echo do_shortcode('[caldera_form id="CF621212d652c30"]'); ?>
+				<?php echo do_shortcode('[wpforms id="140"]'); ?>
 				
 				</div>
 					

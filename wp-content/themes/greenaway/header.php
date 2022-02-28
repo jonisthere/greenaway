@@ -27,17 +27,16 @@ defined( 'ABSPATH' ) || exit;
 <body class="body">
 
 <div class="main-page-container">
-<nav class="navbar navbar-expand-lg navbar-light">
-<a class="navbar-brand" href="#">Greenaway</a>
+<nav class="navbar navbar-expand-lg navbar-dark">
+<a class="navbar-brand" href="#">Greenaway & Greenaway</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
   <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<?php echo site_url();?>/home">HOME</a>
+          <a class="nav-link" href="<?php echo site_url();?>/home">HOME</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="<?php echo site_url();?>/work">WORK</a>

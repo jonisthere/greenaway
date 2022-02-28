@@ -11147,6 +11147,10 @@ p, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, a {
   }
 }
 
+.active {
+  color: white;
+}
+
 header {
   padding: 10px 0 10px 0;
 }
@@ -11336,40 +11340,38 @@ header .navbar-brand {
   display: flex;
   justify-content: center;
 }
-.contact-form #caldera_form_1.caldera-grid {
-  max-width: 400px;
+.contact-form #wpforms-140 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 450px;
+  width: 100%;
+  margin: auto;
+}
+.contact-form #wpforms-form-140 {
+  max-width: 350px;
   width: 100%;
 }
-@media screen and (max-width: 992px) {
-  .contact-form #caldera_form_1.caldera-grid {
-    max-width: 500px;
-    width: 100%;
-  }
-}
-.contact-form .caldera-grid .form-group {
-  margin-bottom: 25px;
-}
-.contact-form .caldera-grid .form-control {
+.contact-form #wpforms-140-field_0, .contact-form #wpforms-140-field_1, .contact-form #wpforms-140-field_5, .contact-form #wpforms-140-field_2 {
+  font-family: "montserrat", sans-serif !important;
+  color: white;
+  font-size: 16px;
+  opacity: 1;
+  max-width: 350px;
+  width: 100%;
   background-color: #1e1e1e;
   border: none;
   border-bottom: solid 1px white;
   box-shadow: none;
 }
-.contact-form .caldera-grid .form-control::placeholder {
-  font-family: "montserrat", sans-serif !important;
-  color: white;
-  opacity: 1;
-}
-.contact-form .form-group {
+.contact-form .wpforms-submit-container {
   text-align: right;
 }
-.contact-form .caldera-grid .btn-default {
+.contact-form #wpforms-submit-140 {
   border: none;
   padding-right: 0;
   color: white;
   background-color: #1e1e1e;
-}
-.contact-form .caldera-grid .btn {
   font-size: 16px;
 }
 
