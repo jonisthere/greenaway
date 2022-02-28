@@ -11147,10 +11147,6 @@ p, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, a {
   }
 }
 
-.active {
-  color: white;
-}
-
 header {
   padding: 10px 0 10px 0;
 }
@@ -11168,6 +11164,11 @@ header .navbar-brand {
   font-size: 15px;
   font-weight: 700;
   margin-left: 50px;
+}
+@media screen and (max-width: 992px) {
+  .navbar .navbar-nav a {
+    margin-left: 0px;
+  }
 }
 
 .gway-footer {
@@ -11352,7 +11353,7 @@ header .navbar-brand {
   max-width: 350px;
   width: 100%;
 }
-.contact-form #wpforms-140-field_0, .contact-form #wpforms-140-field_1, .contact-form #wpforms-140-field_5, .contact-form #wpforms-140-field_2 {
+.contact-form #wpforms-140-field_0, .contact-form #wpforms-140-field_1, .contact-form #wpforms-140-field_3, .contact-form #wpforms-140-field_2 {
   font-family: "montserrat", sans-serif !important;
   color: white;
   font-size: 16px;
