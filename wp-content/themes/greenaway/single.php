@@ -18,7 +18,7 @@
 					</div>
 					<div class="single-content">
                 <div class="single-content__video">
-				<iframe class="single-video" src="https://player.vimeo.com/video/388471185?autoplay=1&amp;loop=1" allowfullscreen="allowfullscreen" data-dashlane-frameid="594852970497" frameborder="0"></iframe>
+				<iframe class="single-video" src="<?php echo get_field('video') ?>" allowfullscreen="allowfullscreen" data-dashlane-frameid="594852970497" frameborder="0"></iframe>
                 </div>
             </div>
 

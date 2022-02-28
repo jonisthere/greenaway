@@ -25,12 +25,10 @@ get_header();
 		the_post();
 	?>
 		<?php $cat = get_field('work_cat_display'); ?>
-		<div class="container-fluid">
-		<div class="content heading">
-				<h1><?php the_title(); ?></h1>
-				<p><?php the_content(); ?></p>
-		</div>
-	</div>
+			<div class="content heading">
+					<h1><?php the_title(); ?></h1>
+					<p><?php the_content(); ?></p>
+			</div>
 		
 		<?php
 			$args = array ('post_type' => array('work'), 
@@ -48,7 +46,7 @@ get_header();
 			$the_query = new WP_Query( $args );
 		?>
 
-		<div class="category container-fluid">
+		<div class="category">
 			<div class="row">
 				<?php if ( $the_query->have_posts() ) { ?>
 					<?php while ( $the_query->have_posts() ) {
