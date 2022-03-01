@@ -55,7 +55,7 @@ get_header();
 							
 							<?php	
 								if (has_post_thumbnail( $post->ID ) ) :
-									$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'main-image' );?>
+									$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'grid-image' );?>
 									<?php if($image) { ?>
 										<a href="<?php echo get_permalink(); ?>"><img src="<?php echo $image[0]; ?>" class="img-fluid" alt=""></a>   
 									<?php } ?>

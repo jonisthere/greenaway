@@ -11152,7 +11152,7 @@ header {
 }
 
 .navbar-brand {
-  font-size: 15px;
+  font-size: 10px;
   font-weight: 700;
 }
 
@@ -11162,8 +11162,7 @@ header {
 
 .navbar .navbar-nav a {
   text-decoration: none;
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 10px;
   margin-left: 50px;
 }
 @media screen and (max-width: 992px) {
@@ -11269,7 +11268,8 @@ header {
   margin: 0;
 }
 .category .category-item .category-text p a {
-  font-weight: bold;
+  font-size: 10px;
+  font-weight: 600;
   color: white;
   text-decoration: none;
 }
@@ -11333,6 +11333,7 @@ header {
   width: 100%;
 }
 .project-single .content.inner {
+  font-size: 16px;
   max-width: 1200px;
   width: 100%;
   margin-bottom: 50px;
@@ -11354,7 +11355,7 @@ header {
   max-width: 350px;
   width: 100%;
 }
-.contact-form #wpforms-140-field_0, .contact-form #wpforms-140-field_1, .contact-form #wpforms-140-field_3, .contact-form #wpforms-140-field_2 {
+.contact-form #wpforms-140-field_0, .contact-form #wpforms-140-field_1, .contact-form #wpforms-140-field_5, .contact-form #wpforms-140-field_2 {
   font-family: "montserrat", sans-serif !important;
   color: white;
   font-size: 16px;
@@ -11375,6 +11376,13 @@ header {
   color: white;
   background-color: #1e1e1e;
   font-size: 16px;
+}
+.contact-form .wpforms-confirmation-container-full.wpforms-confirmation-scroll {
+  background-color: #1e1e1e;
+  border: none;
+  font-family: "montserrat", sans-serif !important;
+  color: white;
+  font-size: 10px;
 }
 
 .about p {

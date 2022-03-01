@@ -55,8 +55,7 @@ get_header();
 						<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $work_page->ID ), 'grid-image' ); ?>
 						<?php $altText = get_post_meta( get_post_thumbnail_id( $work_page->ID ), '_wp_attachment_image_alt', true ); ?>
 			
-							<img src="<?php echo $image[0]; ?>" class="img-fluid" alt="<?php echo $altText; ?>">
-						
+						<a href="<?php echo get_permalink($work_page->ID); ?>"><img src="<?php echo $image[0]; ?>" class="img-fluid" alt="<?php echo $altText; ?>"></a>
 					<?php } ?>
 					<div class="category-text">
 						<p class="bold"><a href="<?php echo get_permalink($work_page->ID); ?>"><?php echo get_the_title($work_page->ID); ?></a></p>
