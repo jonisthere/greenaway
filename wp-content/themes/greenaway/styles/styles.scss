@@ -14,7 +14,7 @@ p, h1, h2, h3, h4, h5, a {
         background-color: $background;
     }
 
-    .header-container.home, .footer-container.home {
+    .header-container.HOME, .footer-container.HOME {
         position: absolute;
         background: none;
         z-index: 9999;
@@ -25,7 +25,7 @@ p, h1, h2, h3, h4, h5, a {
     }
     
 
-    .footer-container.home {
+    .footer-container.HOME {
         bottom: 0;
     }
    
@@ -78,10 +78,7 @@ p, h1, h2, h3, h4, h5, a {
     
 }
 
-.navbar{
-    
-    
-   
+.navbar{ 
 .navbar-nav{
     
     a{  text-decoration: none;
@@ -141,7 +138,7 @@ p, h1, h2, h3, h4, h5, a {
   
    
     &__copy{   
-//     border: solid 3px hotpink; 
+ //    border: solid 3px hotpink; 
     display: flex;
      justify-content: right;
      align-items: center;
@@ -151,6 +148,7 @@ p, h1, h2, h3, h4, h5, a {
             font-size: 10px;
             line-height: 14px;
             margin: 0;
+            margin-right: 6px;
         }
      
 
@@ -173,39 +171,45 @@ p, h1, h2, h3, h4, h5, a {
 
 //------ HOME PAGE STYLING -----//
 
-#gg-gif{
-    min-width: 100vw;
-    min-height: 100vh;
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-    background-image: url(../images/G&G_Site_Home_Page_Loop_Master_Gif.gif);
-    background-size: cover;
+
+#gg-video{
+       
+    iframe{
+        min-width: 100vw;
+        min-height: 100vh;
+        width: 100%;
+    }
   
-  
-}
-
-
-
-
-
 .page{
-    width: 100vw;
-    height: 80vh;
+    
     display: flex;
     align-items: flex-end;
+    justify-content: center;
 
     @media screen and (max-width: 576px){
         justify-content: center;
         } 
 
+
     .showreel{
+        z-index: 9999;
+        position: absolute;
         max-height: 100px;
-        max-width: 300px;
+        max-width: 1140px;
         width: 100%;
-   //     border: solid 3px hotpink; 
-        margin-bottom: 125px;
-        margin-left: 50px;
+        padding: 0 40px;
+     //   border: solid 3px hotpink; 
+        margin: auto;
+        margin-bottom: 140px;
+
+        
+
+        @media screen and (max-width: 1000px){
+            padding: 0 20px;
+            }   
+            @media screen and (max-width: 500px){
+                padding: 0 10px;
+                }  
 
         @media screen and (max-width: 576px){
             display: flex;
@@ -213,7 +217,7 @@ p, h1, h2, h3, h4, h5, a {
             align-items: center;
             margin-left: 0px;
             } 
-        
+
         .btn{
         font-family: 'montserrat', sans-serif !important;
         font-size: 14px;
@@ -226,18 +230,22 @@ p, h1, h2, h3, h4, h5, a {
     }
 }
 
-.home-content{   
-          &__video{
-            height: 100vh;
-            width: 100%;
-            .gg-video{
-           height: 100%;
-           width: 100%;
-            }
-    
-    }
 }
 
+
+
+//------ WORK PAGE STYLING -----//
+
+.showreel-content{   
+    &__video{
+      height: 100vh;
+      width: 100%;
+      .showreel-video{
+     height: 100%;
+     width: 100%;
+      }
+    }
+}
 
 
 
@@ -409,11 +417,18 @@ p, h1, h2, h3, h4, h5, a {
     max-width: 450px;
     width: 100%;
     margin: auto;
+    margin-right: 0px;
+   
+    @media screen and (max-width: 768px){
+        margin: auto;
+        } 
+
 }
 
 #wpforms-form-140{
     max-width: 350px;
     width: 100%;
+    
 }
 
  #wpforms-140-field_0, #wpforms-140-field_1, #wpforms-140-field_5, #wpforms-140-field_2{
@@ -448,7 +463,15 @@ p, h1, h2, h3, h4, h5, a {
       font-family: 'montserrat', sans-serif !important;
       color: white;
       font-size: 10px;
+      text-align: right;
+      padding-right: 0;
+      margin-right: 0;
             
+      @media screen and (max-width: 768px){
+        text-align: center;
+        margin: 30px auto;
+        padding-right: 15px;
+        }   
   }
 
 }

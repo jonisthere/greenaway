@@ -11114,7 +11114,7 @@ textarea.form-control-lg {
 }
 h1, .h1 {
   font-size: 30px;
-  font-weight: bold;
+  font-weight: lighter;
   line-height: 50px;
 }
 
@@ -11127,17 +11127,17 @@ p, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, a {
   background-color: #1e1e1e;
 }
 
-.header-container.home, .footer-container.home {
+.header-container.HOME, .footer-container.HOME {
   position: absolute;
   background: none;
   z-index: 9999;
   min-width: 100%;
 }
-.header-container.home .main-page-container, .footer-container.home .main-page-container {
+.header-container.HOME .main-page-container, .footer-container.HOME .main-page-container {
   margin: auto;
 }
 
-.footer-container.home {
+.footer-container.HOME {
   bottom: 0;
 }
 
@@ -11220,6 +11220,7 @@ header {
   font-size: 10px;
   line-height: 14px;
   margin: 0;
+  margin-right: 6px;
 }
 @media screen and (max-width: 992px) {
   .gway-footer__copy p {
@@ -11233,43 +11234,50 @@ header {
   }
 }
 
-#gg-gif {
+#gg-video iframe {
   min-width: 100vw;
   min-height: 100vh;
-  position: relative;
-  max-width: 100%;
-  overflow: hidden;
-  background-image: url(../images/G&G_Site_Home_Page_Loop_Master_Gif.gif);
-  background-size: cover;
+  width: 100%;
 }
-
-.page {
-  width: 100vw;
-  height: 80vh;
+#gg-video .page {
   display: flex;
   align-items: flex-end;
+  justify-content: center;
 }
 @media screen and (max-width: 576px) {
-  .page {
+  #gg-video .page {
     justify-content: center;
   }
 }
-.page .showreel {
+#gg-video .page .showreel {
+  z-index: 9999;
+  position: absolute;
   max-height: 100px;
-  max-width: 300px;
+  max-width: 1140px;
   width: 100%;
-  margin-bottom: 125px;
-  margin-left: 50px;
+  padding: 0 40px;
+  margin: auto;
+  margin-bottom: 140px;
+}
+@media screen and (max-width: 1000px) {
+  #gg-video .page .showreel {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #gg-video .page .showreel {
+    padding: 0 10px;
+  }
 }
 @media screen and (max-width: 576px) {
-  .page .showreel {
+  #gg-video .page .showreel {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 0px;
   }
 }
-.page .showreel .btn {
+#gg-video .page .showreel .btn {
   font-family: "montserrat", sans-serif !important;
   font-size: 14px;
   font-weight: 400;
@@ -11279,11 +11287,11 @@ header {
   padding: 14px 30px;
 }
 
-.home-content__video {
+.showreel-content__video {
   height: 100vh;
   width: 100%;
 }
-.home-content__video .gg-video {
+.showreel-content__video .showreel-video {
   height: 100%;
   width: 100%;
 }
@@ -11397,19 +11405,25 @@ header {
   display: flex;
   justify-content: center;
 }
-.contact-form #wpforms-140 {
+.contact-form #wpforms-14 {
   display: flex;
   align-items: center;
   justify-content: center;
   max-width: 450px;
   width: 100%;
   margin: auto;
+  margin-right: 0px;
 }
-.contact-form #wpforms-form-140 {
+@media screen and (max-width: 768px) {
+  .contact-form #wpforms-14 {
+    margin: auto;
+  }
+}
+.contact-form #wpforms-form-14 {
   max-width: 350px;
   width: 100%;
 }
-.contact-form #wpforms-140-field_0, .contact-form #wpforms-140-field_1, .contact-form #wpforms-140-field_5, .contact-form #wpforms-140-field_2 {
+.contact-form #wpforms-14-field_0, .contact-form #wpforms-14-field_1, .contact-form #wpforms-14-field_5, .contact-form #wpforms-14-field_2 {
   font-family: "montserrat", sans-serif !important;
   color: white;
   font-size: 16px;
@@ -11424,7 +11438,7 @@ header {
 .contact-form .wpforms-submit-container {
   text-align: right;
 }
-.contact-form #wpforms-submit-140 {
+.contact-form #wpforms-submit-14 {
   border: none;
   padding-right: 0;
   color: white;
@@ -11437,6 +11451,16 @@ header {
   font-family: "montserrat", sans-serif !important;
   color: white;
   font-size: 10px;
+  text-align: right;
+  padding-right: 0;
+  margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .contact-form .wpforms-confirmation-container-full.wpforms-confirmation-scroll {
+    text-align: center;
+    margin: 30px auto;
+    padding-right: 15px;
+  }
 }
 
 .about p {

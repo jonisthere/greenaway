@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) || exit;
 ?>
 
 <div class="footer-container <?php single_post_title('', TRUE); ?>">
-<div class="main-page-container home">    
+<div class="main-page-container">    
     <footer class="">
         <div class="gway-footer">
             <div class="row">

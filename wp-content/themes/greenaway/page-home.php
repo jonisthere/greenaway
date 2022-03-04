@@ -20,16 +20,24 @@ defined('ABSPATH') || exit;
 get_header();
 ?>
 
-<div id="">
-<div class="main-page-container">
-    <div class="page">
-<div class="showreel">
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/683700164?h=da6066f23e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="G&amp;amp;G_Site_Home_Page_Loop_Master+noise"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
- 
+
+<div id="gg-video">
+    
+<div class="page">
+<div>
+        <iframe src="https://player.vimeo.com/video/683700164?h=da6066f23e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    
+    
+    <div class="showreel">
+    
     <a href="<?php echo site_url();?>/showreel"><button class="showreel-button btn">VIEW THE SHOWREEL</button></a>
 </div>
+
+
    </div>
-</div>
+
 </div>
 
 
@@ -40,3 +48,6 @@ get_footer();
 								// var_dump($values2); 
                                 ?>
                                 
+
+
+                               

@@ -44,7 +44,7 @@ get_header();
 				</div>
 				<div class="contact-form col-12 col-md-6">
 				
-				<?php echo do_shortcode('[wpforms id="140"]'); ?>
+				<?php echo do_shortcode('[wpforms id="154"]'); ?>
 				
 				</div>
 					
