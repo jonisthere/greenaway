@@ -14,6 +14,22 @@ p, h1, h2, h3, h4, h5, a {
         background-color: $background;
     }
 
+    .header-container.home, .footer-container.home {
+        position: absolute;
+        background: none;
+        z-index: 9999;
+        min-width: 100%;
+        .main-page-container{
+            margin: auto;
+        }
+    }
+    
+
+    .footer-container.home {
+        bottom: 0;
+    }
+   
+
 
 
     .main-page-container{
@@ -43,7 +59,7 @@ p, h1, h2, h3, h4, h5, a {
 
  header{
     
-
+    
     padding: 10px 0 10px 0;
     
     
@@ -89,20 +105,18 @@ p, h1, h2, h3, h4, h5, a {
 
 .gway-footer{
     
+ 
     max-width: 1200px;
     width: 100%;
-    margin: 100px auto 60px auto;
+    margin: 100px auto 30px auto;
     padding: 0;
+   
    
    .row{
        justify-content: space-between;
    }
 
     &__nav{
-        @media screen and (max-width: 768px){
-            padding-bottom: 80px;
-            }
-
   //      border: solid 3px hotpink; 
         
         .nav{
@@ -110,12 +124,14 @@ p, h1, h2, h3, h4, h5, a {
 
             @media screen and (max-width: 768px){
                 justify-content: center;
+                
                 }    
         }
 
        .indeed{
            padding-left: 0px;
            @media screen and (max-width: 768px){
+           
             padding-left: 11.2px;
             }
         } 
@@ -125,7 +141,7 @@ p, h1, h2, h3, h4, h5, a {
   
    
     &__copy{   
-//    border: solid 3px hotpink; 
+//     border: solid 3px hotpink; 
     display: flex;
      justify-content: right;
      align-items: center;
@@ -146,7 +162,7 @@ p, h1, h2, h3, h4, h5, a {
         }
 
         @media screen and (max-width: 768px){
-            padding-bottom: 40px;
+            
             justify-content: center;
             }
 
@@ -156,6 +172,59 @@ p, h1, h2, h3, h4, h5, a {
 
 
 //------ HOME PAGE STYLING -----//
+
+#gg-gif{
+    min-width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    background-image: url(../images/G&G_Site_Home_Page_Loop_Master_Gif.gif);
+    background-size: cover;
+  
+  
+}
+
+
+
+
+
+.page{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: flex-end;
+
+    @media screen and (max-width: 576px){
+        justify-content: center;
+        } 
+
+    .showreel{
+        max-height: 100px;
+        max-width: 300px;
+        width: 100%;
+   //     border: solid 3px hotpink; 
+        margin-bottom: 125px;
+        margin-left: 50px;
+
+        @media screen and (max-width: 576px){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0px;
+            } 
+        
+        .btn{
+        font-family: 'montserrat', sans-serif !important;
+        font-size: 14px;
+        font-weight: 400;
+           color: white;
+           border: solid 1px white;
+           border-radius: 0%;
+           padding: 14px 30px;
+       } 
+    }
+}
 
 .home-content{   
           &__video{

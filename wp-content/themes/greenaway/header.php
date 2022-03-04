@@ -26,6 +26,7 @@ defined( 'ABSPATH' ) || exit;
 
 <body class="body">
 
+<div class="header-container <?php single_post_title('', TRUE); ?>">
 <div class="main-page-container">
 <nav class="navbar navbar-expand-lg navbar-dark">
 <a class="navbar-brand" href="#">GREENAWAY & GREENAWAY</a>
@@ -50,4 +51,5 @@ defined( 'ABSPATH' ) || exit;
       </ul>
   </div>
 </nav>
+</div>
 </div>
