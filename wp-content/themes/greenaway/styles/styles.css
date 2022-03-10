@@ -11250,7 +11250,7 @@ header {
   }
 }
 #gg-video .page .showreel {
-  z-index: 9999;
+  z-index: 99999;
   position: absolute;
   max-height: 100px;
   max-width: 1140px;
@@ -11279,12 +11279,12 @@ header {
 }
 #gg-video .page .showreel .btn {
   font-family: "montserrat", sans-serif !important;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 400;
   color: white;
   border: solid 1px white;
   border-radius: 0%;
-  padding: 14px 30px;
+  padding: 7px 18px;
 }
 
 .showreel-content__video {
@@ -11405,7 +11405,7 @@ header {
   display: flex;
   justify-content: center;
 }
-.contact-form #wpforms-14 {
+.contact-form #wpforms-140 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11415,15 +11415,15 @@ header {
   margin-right: 0px;
 }
 @media screen and (max-width: 768px) {
-  .contact-form #wpforms-14 {
+  .contact-form #wpforms-140 {
     margin: auto;
   }
 }
-.contact-form #wpforms-form-14 {
+.contact-form #wpforms-form-140 {
   max-width: 350px;
   width: 100%;
 }
-.contact-form #wpforms-14-field_0, .contact-form #wpforms-14-field_1, .contact-form #wpforms-14-field_5, .contact-form #wpforms-14-field_2 {
+.contact-form #wpforms-140-field_0, .contact-form #wpforms-140-field_1, .contact-form #wpforms-140-field_5, .contact-form #wpforms-140-field_5, .contact-form #wpforms-140-field_2 {
   font-family: "montserrat", sans-serif !important;
   color: white;
   font-size: 16px;
@@ -11438,7 +11438,7 @@ header {
 .contact-form .wpforms-submit-container {
   text-align: right;
 }
-.contact-form #wpforms-submit-14 {
+.contact-form #wpforms-submit-140 {
   border: none;
   padding-right: 0;
   color: white;
