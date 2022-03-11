@@ -14,7 +14,7 @@ p, h1, h2, h3, h4, h5, a {
         background-color: $background;
     }
 
-    .header-container.HOME, .footer-container.HOME {
+    .header-container.HOME, .footer-container.HOME, .header-container.home, .footer-container.home {
         position: absolute;
         background: none;
         z-index: 9999;
@@ -25,7 +25,7 @@ p, h1, h2, h3, h4, h5, a {
     }
     
 
-    .footer-container.HOME {
+    .footer-container.HOME, .footer-container.home{
         bottom: 0;
     }
    
@@ -319,23 +319,23 @@ p, h1, h2, h3, h4, h5, a {
    
 
     .single-content{   
-        height: 80vh;
+          min-height: 80vh;
           width: 100%;
 
           @media screen and (max-width: 1000px){
-            height: 60vh;
+            min-height: 60vh;
             width: 100%;
             }   
             @media screen and (max-width: 800px){
-                height: 50vh;
+                min-height: 50vh;
                 width: 100%;
                 }
                 @media screen and (max-width: 600px){
-                    height: 40vh;
+                    min-height: 40vh;
                     width: 100%;
                     }
                     @media screen and (max-width: 500px){
-                        height: 30vh;
+                        min-height: 30vh;
                         width: 100%;
                         }  
 
@@ -432,7 +432,7 @@ p, h1, h2, h3, h4, h5, a {
     
 }
 
- #wpforms-140-field_0, #wpforms-140-field_1, #wpforms-140-field_5, #wpforms-140-field_3, #wpforms-140-field_2{
+ #wpforms-140-field_0, #wpforms-140-field_1, #wpforms-140-field_3, #wpforms-140-field_5, #wpforms-140-field_2{
     font-family: 'montserrat', sans-serif !important;
     color: white;
     font-size: 16px;

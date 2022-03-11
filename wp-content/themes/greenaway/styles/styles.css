@@ -11127,17 +11127,17 @@ p, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, a {
   background-color: #1e1e1e;
 }
 
-.header-container.HOME, .footer-container.HOME {
+.header-container.HOME, .footer-container.HOME, .header-container.home, .footer-container.home {
   position: absolute;
   background: none;
   z-index: 9999;
   min-width: 100%;
 }
-.header-container.HOME .main-page-container, .footer-container.HOME .main-page-container {
+.header-container.HOME .main-page-container, .footer-container.HOME .main-page-container, .header-container.home .main-page-container, .footer-container.home .main-page-container {
   margin: auto;
 }
 
-.footer-container.HOME {
+.footer-container.HOME, .footer-container.home {
   bottom: 0;
 }
 
@@ -11338,30 +11338,30 @@ header {
 }
 
 .project-single .single-content {
-  height: 80vh;
+  min-height: 80vh;
   width: 100%;
 }
 @media screen and (max-width: 1000px) {
   .project-single .single-content {
-    height: 60vh;
+    min-height: 60vh;
     width: 100%;
   }
 }
 @media screen and (max-width: 800px) {
   .project-single .single-content {
-    height: 50vh;
+    min-height: 50vh;
     width: 100%;
   }
 }
 @media screen and (max-width: 600px) {
   .project-single .single-content {
-    height: 40vh;
+    min-height: 40vh;
     width: 100%;
   }
 }
 @media screen and (max-width: 500px) {
   .project-single .single-content {
-    height: 30vh;
+    min-height: 30vh;
     width: 100%;
   }
 }
@@ -11424,7 +11424,7 @@ header {
   max-width: 350px;
   width: 100%;
 }
-.contact-form #wpforms-140-field_0, .contact-form #wpforms-140-field_1, .contact-form #wpforms-140-field_5, .contact-form #wpforms-140-field_3, .contact-form #wpforms-140-field_2 {
+.contact-form #wpforms-140-field_0, .contact-form #wpforms-140-field_1, .contact-form #wpforms-140-field_3, .contact-form #wpforms-140-field_5, .contact-form #wpforms-140-field_2 {
   font-family: "montserrat", sans-serif !important;
   color: white;
   font-size: 16px;
