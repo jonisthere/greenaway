@@ -23,12 +23,15 @@ get_header();
 
 <div id="gg-video">
     
-<div class="page">
-<div>
-        <iframe src="https://player.vimeo.com/video/683700164?h=da6066f23e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<div class="page" style="overflow:hidden">
+<div style="overflow:hidden">
+        <!-- <iframe src="https://player.vimeo.com/video/683700164?h=da6066f23e" frameborder="0" allowfullscreen="allowfullscreen"></iframe> -->
+            <video data-autoplay="" autoplay="" webkit-playsinline="" playsinline="" loop="" muted="" data-object-fit="cover">
+						<source src="https://player.vimeo.com/video/683700164?h=da6066f23e" type="video/mp4">
+					</video>
     </div>
-    <script src="https://player.vimeo.com/api/player.js"></script>
-    
+    <!-- <script src="https://player.vimeo.com/api/player.js"></script>
+     -->
     
     <div class="showreel">
     
