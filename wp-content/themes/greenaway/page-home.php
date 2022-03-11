@@ -25,7 +25,7 @@ get_header();
     
 <div class="page">
 <div>
-        <iframe src="https://giphy.com/embed/xUA7b3mdJsdGrzF6dW" frameborder="0" allow="fullscreen"></iframe>
+        <iframe src="https://player.vimeo.com/video/683700164?h=da6066f23e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="fullscreen"></iframe>
     </div>
     <script src="https://player.vimeo.com/api/player.js"></script>
     
@@ -49,8 +49,4 @@ get_footer();
                                 ?>
                                 
 
-                               <!--<iframe src="https://giphy.com/embed/xUA7b3mdJsdGrzF6dW" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/space-stars-universe-xUA7b3mdJsdGrzF6dW">via GIPHY</a></p>-->
-
-                                <!--https://player.vimeo.com/video/358158866?h=040768a133-->
-
-                               
+                             

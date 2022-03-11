@@ -11211,6 +11211,7 @@ header {
   }
 }
 .gway-footer__copy {
+  border: solid 3px hotpink;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -11423,7 +11424,7 @@ header {
   max-width: 350px;
   width: 100%;
 }
-.contact-form #wpforms-140-field_0, .contact-form #wpforms-140-field_1, .contact-form #wpforms-140-field_5, .contact-form #wpforms-140-field_5, .contact-form #wpforms-140-field_2 {
+.contact-form #wpforms-140-field_0, .contact-form #wpforms-140-field_1, .contact-form #wpforms-140-field_5, .contact-form #wpforms-140-field_3, .contact-form #wpforms-140-field_2 {
   font-family: "montserrat", sans-serif !important;
   color: white;
   font-size: 16px;
