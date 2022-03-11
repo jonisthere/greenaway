@@ -21,12 +21,12 @@ get_header();
 ?>
 
 
-<div id="gg-video">
+<div id="gg-video" style="height:100vh">
     
 <div class="page" style="overflow:hidden">
 <div style="overflow:hidden">
         <!-- <iframe src="https://player.vimeo.com/video/683700164?h=da6066f23e" frameborder="0" allowfullscreen="allowfullscreen"></iframe> -->
-            <video data-autoplay="" autoplay="" webkit-playsinline="" playsinline="" loop="" muted="" data-object-fit="cover">
+            <video class="video-home" data-autoplay="" autoplay="" webkit-playsinline="" playsinline="" loop="" muted="" data-object-fit="cover">
 						<!-- <source src="https://player.vimeo.com/video/683700164?h=da6066f23e" type="video/mp4"> -->
                         <source src="https://altcinc.com/wp-content/uploads/2019/05/ASH_REEL_2018_006.mp4" type="video/mp4">
 

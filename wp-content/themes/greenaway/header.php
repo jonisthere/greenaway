@@ -25,6 +25,7 @@ defined( 'ABSPATH' ) || exit;
 </head>
 
 <body class="body">
+  <div class="complete-content">
 
 <div class="header-container <?php single_post_title('', TRUE); ?>">
 <div class="main-page-container">
