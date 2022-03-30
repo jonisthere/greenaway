@@ -11204,9 +11204,6 @@ header {
 .gway-footer .row {
   justify-content: space-between;
 }
-.gway-footer__nav {
-  border: solid 3px hotpink;
-}
 .gway-footer__nav .nav {
   flex-wrap: nowrap;
 }
