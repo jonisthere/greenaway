@@ -11171,7 +11171,7 @@ header {
 }
 
 .navbar-expand-lg .navbar-collapse {
-  justify-content: right;
+  justify-content: flex-end;
 }
 
 .navbar .navbar-nav a {
@@ -11194,6 +11194,9 @@ header {
 .gway-footer .row {
   justify-content: space-between;
 }
+.gway-footer__nav {
+  border: solid 3px hotpink;
+}
 .gway-footer__nav .nav {
   flex-wrap: nowrap;
 }
@@ -11211,7 +11214,6 @@ header {
   }
 }
 .gway-footer__copy {
-  border: solid 3px hotpink;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -11258,7 +11260,7 @@ header {
   width: 100%;
   padding: 0 40px;
   margin: auto;
-  margin-bottom: 140px;
+  bottom: 140px;
 }
 @media screen and (max-width: 1000px) {
   #gg-video .page .showreel {
@@ -11337,40 +11339,52 @@ header {
   text-decoration: none;
 }
 
-.project-single .single-content {
-  min-height: 80vh;
-  width: 100%;
-}
-@media screen and (max-width: 1000px) {
-  .project-single .single-content {
-    min-height: 60vh;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 800px) {
-  .project-single .single-content {
-    min-height: 50vh;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .project-single .single-content {
-    min-height: 40vh;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 500px) {
-  .project-single .single-content {
-    min-height: 30vh;
-    width: 100%;
-  }
+.project-single {
+  /*  .single-content{   
+           min-height: 80vh;
+           width: 100%;
+
+           @media screen and (max-width: 1000px){
+             min-height: 60vh;
+             width: 100%;
+             }   
+             @media screen and (max-width: 800px){
+                 min-height: 50vh;
+                 width: 100%;
+                 }
+                 @media screen and (max-width: 600px){
+                     min-height: 40vh;
+                     width: 100%;
+                     }
+                     @media screen and (max-width: 500px){
+                         min-height: 30vh;
+                         width: 100%;
+                         }  
+
+
+         &__video{
+             height: 100%;
+             width: 100%;
+              }
+           .single-video{
+          height: 100%;
+          width: 100%;
+           }
+
+   }
+  */
 }
 .project-single .single-content__video {
-  height: 100%;
-  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
 }
-.project-single .single-content .single-video {
+.project-single .single-content__video iframe {
+  border: 0;
   height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
   width: 100%;
 }
 .project-single__section .col-12 {
@@ -11470,6 +11484,10 @@ header {
   width: 100%;
   margin: auto;
   margin-top: 25px;
+}
+
+.video-home {
+  height: 100vh;
 }
 
 /*# sourceMappingURL=styles.css.map */
