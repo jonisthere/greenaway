@@ -9,6 +9,15 @@ p, h1, h2, h3, h4, h5, a {
     color: white;
 }
 
+.page-home {
+    position:relative; 
+    overflow:hidden
+}
+
+p {
+    font-size: 16px;
+    line-height: 25px;
+}
 
     .body{
         background-color: $background;
@@ -201,7 +210,7 @@ p, h1, h2, h3, h4, h5, a {
         padding: 0 40px;
      //   border: solid 3px hotpink; 
         margin: auto;
-        margin-bottom: 140px;
+        bottom: 140px;
 
         
 
@@ -226,7 +235,7 @@ p, h1, h2, h3, h4, h5, a {
            color: white;
            border: solid 1px white;
            border-radius: 0%;
-           padding: 7px 18px;
+           padding: 7px 16px;
        } 
     }
 }
@@ -488,7 +497,6 @@ p, h1, h2, h3, h4, h5, a {
     p{
         /*color: hotpink;*/
         max-width: 1200px;
-    
         width: 100%;
         margin: auto;
         margin-top: 25px;
@@ -498,3 +506,9 @@ p, h1, h2, h3, h4, h5, a {
 .video-home {
     height: 100vh;
 } 
+
+.video-player {
+    object-fit: cover;
+    height: 100vh;
+    
+}

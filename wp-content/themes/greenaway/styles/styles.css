@@ -11123,6 +11123,16 @@ p, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, a {
   color: white;
 }
 
+.page-home {
+  position: relative;
+  overflow: hidden;
+}
+
+p {
+  font-size: 16px;
+  line-height: 25px;
+}
+
 .body {
   background-color: #1e1e1e;
 }
@@ -11257,7 +11267,7 @@ header {
   width: 100%;
   padding: 0 40px;
   margin: auto;
-  margin-bottom: 140px;
+  bottom: 140px;
 }
 @media screen and (max-width: 1000px) {
   #gg-video .page .showreel {
@@ -11284,7 +11294,7 @@ header {
   color: white;
   border: solid 1px white;
   border-radius: 0%;
-  padding: 7px 18px;
+  padding: 7px 16px;
 }
 
 .showreel-content__video {
@@ -11472,6 +11482,11 @@ header {
 }
 
 .video-home {
+  height: 100vh;
+}
+
+.video-player {
+  object-fit: cover;
   height: 100vh;
 }
 

@@ -24,7 +24,7 @@ get_header();
           
             <div class="showreel-content">
                 <div class="showreel-content__video">
-				<iframe class="showreel-video" src="https://player.vimeo.com/video/388471185?autoplay=1&amp;loop=1" allowfullscreen="allowfullscreen" data-dashlane-frameid="594852970497" frameborder="0"></iframe>
+				<iframe class="showreel-video" src="https://player.vimeo.com/video/388471185?autoplay=1&loop=1" allowfullscreen="allowfullscreen" data-dashlane-frameid="594852970497" frameborder="0"></iframe>
                 </div>
             </div>
          
