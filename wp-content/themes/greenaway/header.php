@@ -30,7 +30,7 @@ defined( 'ABSPATH' ) || exit;
 <div class="header-container <?php single_post_title('', TRUE); ?>">
 <div class="main-page-container">
 <nav class="navbar navbar-expand-lg navbar-dark">
-<a class="navbar-brand" href="#">GREENAWAY & GREENAWAY</a>
+<a class="navbar-brand" href="<?php echo site_url();?>">GREENAWAY & GREENAWAY</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
